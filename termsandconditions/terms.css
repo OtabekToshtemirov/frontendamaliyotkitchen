@@ -1,0 +1,77 @@
+@import "../header.css";
+@import "../footer.css";
+
+.terms_banner{
+    font-family: var(--font-family), serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 151px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.terms_banner::before{
+    content: url("../images/list2.png");
+    position: absolute;
+    top:  0;
+    left: -80px;
+    z-index: 5;
+}
+.terms_banner::after{
+    content: url("../images/list1.png");
+    position: absolute;
+    top:  -70px ;
+    right: -50px;
+    z-index: 5;
+}
+
+.terms_banner h1{
+    font-size: 3rem;
+}
+.terms-title{
+    font-family: var(--font-family), serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: justify;
+    color: #b0cc0d;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px){
+    .terms_banner{
+        height: 100px;
+    }
+    .terms_banner h1{
+        font-size: 24px;
+    }
+    .terms_banner::before {
+        content: url("../images/list2.png");
+        position: absolute;
+        top: -40px;
+        left: -70px;
+        z-index: 5;
+    }
+    .terms_banner::after {
+        content: url("../images/list1.png");
+        position: absolute;
+        top: -70px;
+        right: 0px;
+        z-index: 5;
+    }
+    .terms-title{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+}
