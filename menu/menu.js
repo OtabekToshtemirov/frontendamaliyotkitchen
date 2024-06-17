@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Remove 'activelink' class from all links
             modalCategories.forEach(link => link.classList.remove('activelink'));
 
-            // Add 'activelink' class to the clicked link
+            // Adding 'activelink' class to the clicked link
             this.classList.add('activelink');
         });
     })
