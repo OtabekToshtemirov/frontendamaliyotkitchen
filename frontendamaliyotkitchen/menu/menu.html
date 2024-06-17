@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navigation">
+            <div class="burger-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.56301 19.937C3.4304 19.937 3.30323 19.9897 3.20946 20.0835C3.11569 20.1772 3.06301 20.3044 3.06301 20.437C3.06301 20.5696 3.11569 20.6968 3.20946 20.7906C3.30323 20.8843 3.4304 20.937 3.56301 20.937L20.437 20.939C20.5696 20.939 20.6968 20.8863 20.7906 20.7926C20.8843 20.6988 20.937 20.5716 20.937 20.439C20.937 20.3064 20.8843 20.1792 20.7906 20.0855C20.6968 19.9917 20.5696 19.939 20.437 19.939L3.56301 19.937ZM3.56301 11.5C3.4304 11.5 3.30323 11.5527 3.20946 11.6465C3.11569 11.7402 3.06301 11.8674 3.06301 12C3.06301 12.1326 3.11569 12.2598 3.20946 12.3536C3.30323 12.4473 3.4304 12.5 3.56301 12.5L13.563 12.501C13.6956 12.501 13.8228 12.4483 13.9166 12.3546C14.0103 12.2608 14.063 12.1336 14.063 12.001C14.063 11.8684 14.0103 11.7412 13.9166 11.6475C13.8228 11.5537 13.6956 11.501 13.563 11.501L3.56301 11.5ZM3.56301 3.06201C3.4304 3.06201 3.30323 3.11469 3.20946 3.20846C3.11569 3.30223 3.06301 3.4294 3.06301 3.56201C3.06301 3.69462 3.11569 3.8218 3.20946 3.91557C3.30323 4.00933 3.4304 4.06201 3.56301 4.06201L20.437 4.06301C20.5696 4.06301 20.6968 4.01033 20.7906 3.91657C20.8843 3.8228 20.937 3.69562 20.937 3.56301C20.937 3.4304 20.8843 3.30323 20.7906 3.20946C20.6968 3.11569 20.5696 3.06301 20.437 3.06301L3.56301 3.06201Z"
+                          fill="black"/>
+                </svg>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="../index.html">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-infos">
+                <a class="nav-tel-number" href="tel:+988887555222">
+                    <img src="../images/phone_icon.png" alt="phone icon">
+                    591 902 883</a>
+                <!--                dropdown for change language-->
+                <div class="dropdown">
+                    <button class="dropbtn">EN</button>
+                    <div class="dropdown-content">
+                        <a href="#">EN</a>
+                        <a href="#">RU</a>
+                        <a href="#">UZ</a>
+                    </div>
+                </div>
+                <a class="login" href="../login/login.html">
+                    <img src="../images/user_icon.png" alt="user icon">
+                    <span>Sign in</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="menu-section">
+        <aside class="left-menu">
+            <div class="left-menu-top">
+                <a href="#" id="menu">
+                    <img src="../images/menu/free-icon-food-package-4682243.png" alt="menu icon">
+                    <span>Menu</span>
+                </a>
+                <a href="#">
+                    <img src="../images/menu/free-icon-food-delivery-10202108.png" alt="Orders">
+                    <span>Orders</span>
+                </a>
+                <a href="#">
+                    <img src="../images/menu/Group%201000004077.png" alt="Delivery">
+                    <span>Delivery</span>
+                </a>
+
+            </div>
+            <div class="left-menu-bottom">
+                <a href="#" id="settings">
+                    <img src="../images/menu/free-icon-settings-503822.png" alt="Settings">
+                    <span>Settings</span>
+                </a>
+                <a id="account" href="#">
+                    <img src="../images/avatar.png" alt="account">
+                    <span>First Last</span>
+                </a>
+            </div>
+        </aside>
+
+
+        <div class="main-menu">
+            <!--        settings page-------------------- -->
+            <div class="hide settings-page">
+                <h1>Settings Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies lectus sem.</p>
+
+                <div class="bonuses ">
+                <span class="bonus-box">
+                    <img src="../images/star.png" alt="star icon">
+                <strong>456 бонусов</strong>
+                </span>
+
+                    <p>Вы можете потратить эти бонусы бла-бла-бла</p>
+                </div>
+
+                <div class="section">
+                    <h2>Account Information</h2>
+                    <div class="form-group">
+                        <label for="firstName">
+                            First Name
+                            <input type="text" id="firstName" value="Musharof">
+                        </label>
+
+                        <label for="lastName">
+                            Last Name
+                            <input type="text" id="lastName" value="Chy">
+                        </label>
+
+                        <label for="email">
+                            Email Address
+                            <input type="email" id="email" value="Musharof">
+                        </label>
+
+                        <label for="telegram">
+                            Telegram
+                            <input type="text" id="telegram" value="Musharof">
+                        </label>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="edit-profile">
+                            <img src="../images/avatar.png" alt="Profile Picture">
+                            <span>Edit your profile quickly <i class="fas fa-camera"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Delivery Information</h2>
+                    <div class="form-group">
+                        <label for="streetAddress1">
+                            Street Address
+                            <input type="text" id="streetAddress1" value="Musharof">
+                        </label>
+                        <label for="streetAddress2">
+                            Street Address
+                            <input type="text" id="streetAddress2" value="Musharof">
+                        </label>
+                        <label for="streetAddress3">
+                            Street Address
+                            <input type="text" id="streetAddress3" value="Musharof">
+                        </label>
+                        <label for="streetAddress4">
+                            Street Address
+                            <input type="text" id="streetAddress4" value="Musharof">
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Password</h2>
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" id="currentPassword" value="Musharof">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" id="newPassword" value="Chy">
+                        <label for="retypePassword">Re-type New Password</label>
+                        <input type="password" id="retypePassword" value="Musharof">
+                    </div>
+                </div>
+
+                <div class="section logout">
+                    <p>Lorem ipsum dolor sit amet consectetur. Non nunc est nulla urna. Cras vestibulum scelerisque
+                        volutpat
+                        eget sociis et ut morbi commodo. At feugiat non quis aliquam enim et. Posuere integer tortor
+                        elementum eu.</p>
+                    <i class="fas fa-sign-out-alt"></i>
+                </div>
+                <div class="update-button-div">
+                    <button class="update-btn">Update now</button>
+                </div>
+
+            </div>
+            <!--            menu page              ---------------->
+            <div class="menu-page">
+                <h1 class="menu-page-title">Выберите меню с ближайшей доставкой 29 мая, пн</h1>
+
+                <p class="menu-page-subtitle">
+                    Сбалансированное питание на каждый день
+                    Пятиразовое меню на ~1 800 ккал/день для поддержания оптимальной формы при активных тренировках
+                </p>
+
+                <div class="menu-page-days">
+                    <a class="activelink" href="#">Mo 31.07</a>
+                    <a href="#">Tu 01.08</a>
+                    <a href="#">We 02.08</a>
+                    <a href="#">Th 03.08</a>
+                    <a href="#">Fr 04.08</a>
+                    <a href="#">Sa 05.08</a>
+                    <a href="#">Su 06.08</a>
+                </div>
+                <div class="menu-page-meals-info">
+                    <div class="menu-page-meals-cards">
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="order-information">
+                        <label for="kcal">
+                            <select name="kcal" id="kcal">
+                                <option value="Breakfast">1500(kcal)</option>
+                                <option value="Lunch">1750(kcal)</option>
+                                <option value="Dinner">1100(kcal)</option>
+                            </select>
+                        </label>
+                        <label for="days">
+                            <select name="days" id="days">
+                                <option value="Breakfast">1 day</option>
+                                <option value="Lunch">3 day</option>
+                                <option value="Dinner">7 day</option>
+                            </select>
+                        </label>
+                        <label for="firsDelivery">
+                            <select name="dataDelivery" id="firsDelivery">
+                                <option value="Breakfast">Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Dinner">Dinner</option>
+                            </select>
+                        </label>
+                        <label for="period_delivery">
+                            <select name="time" id="period_delivery">
+                                <option value="Breakfast">1 day</option>
+                                <option value="Lunch">3 day</option>
+                                <option value="Dinner">7 day</option>
+                            </select>
+                        </label>
+                        <hr>
+                        <div class="order-price">
+                            <p>Total price </p>
+                            <span>110$</span>
+                        </div>
+                        <button class="order-information-button">Order now</button>
+                    </div>
+                </div>
+                <p class="menu-page-info-paragraph">
+                    Фотографии блюд на сайте являются вариантом сервировки блюда. Внешний вид блюда может отличаться от
+                    фотографии на сайте.
+                </p>
+
+            </div>
+            <!--            modal change meal-->
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header-text">
+                            <h1 class="modal-title">
+                                Замена блюда
+                            </h1>
+                            <p class="modal-subtitle">
+                                Сбалансированное питание на каждый день
+                                Пятиразовое меню на ~1 800 ккал/день для поддержания оптимальной формы
+                            </p>
+                        </div>
+                        <a class="close-btn" href="#">
+                            <img src="../images/menu/X.png" alt="exit">
+                        </a>
+                    </div>
+                    <div class="modal-categories">
+                        <a class="activelink" href="#">Breakfast</a>
+                        <a href="#">Lunch</a>
+                        <a href="#">Dinner</a>
+                        <a href="#">Drinks</a>
+                        <a href="#">Lunch</a>
+                        <a href="#">Dinner</a>
+                        <a href="#">Drinks</a>
+                    </div>
+                    <div class="menu-page-meals-cards">
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                        <div class="menu-page-meal-card">
+                            <img src="../images/meals/as-1.png" alt="meal">
+                            <div class="meal-card-info">
+                                <div class="meal-card-price">
+                                    <span>Breakfast</span>
+                                    <button>Add to cart</button>
+                                </div>
+                                <p class="name-meal">Chicken fricassee with mushrooms and bulgur</p>
+                                <p>300kkal, 250g</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="add-button">
+                        <button>Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../images/logo2.png" alt="logo">
+                </a>
+                <div class="footer-socials">
+                    <a href="https://www.t.me/"><img src="../images/telegram_icon.png" alt="telegram"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/insta_icon.png"
+                                                              alt="instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="../images/facebook_icon.png"
+                                                             alt="facebook"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../index.html">Main</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="../index.html">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="terms-links">
+                    <a href="../termsandconditions/terms.html">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <a href="#">
+                    <img src="../images/location_icon.png" alt="location icon">
+                    123 Main Street, New York, NY 10030
+                </a>
+                <a href="tel:+988887555222">
+                    <img src="../images/phone_icon2.png" alt="phone icon">
+                    591 902 883 (09:00 - 18:00) </a>
+                <a href="mailto:nimadir@gmail.com">
+                    <img src="../images/email_icon.png" alt="email icon">
+                    info@chef-kitchen.com
+                </a>
+                <ul>
+                    <li>Individual entrepreneur Nikita Mosin</li>
+                    <li>Identification Number: 302252210</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-footer">
+            <p>© 2023 Chef Kitchen.</p>
+            <p>
+                Individual entrepreneur Nikita Mosin <br>
+                Identification Number: 302252210
+            </p>
+            <img src="../images/meals/footer-footer-img.png" alt="company logo">
+        </div>
+    </div>
+
+
+</footer>
+
+<script type="module" src="menu.js"></script>
+</body>
+</html>
