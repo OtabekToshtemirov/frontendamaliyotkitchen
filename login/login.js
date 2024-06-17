@@ -36,27 +36,21 @@ window.onload = function () {
         loginByEmail.classList.add('hide');
     });
 
-    returnSignUp.addEventListener('click', () => {
-        loginLogo.classList.remove('active');
-        loginLogo.classList.add('hide');
-        loginSignUp.classList.remove('hide');
-        loginSignUp.classList.add('active');
-        loginByPhone.classList.remove('active');
-        loginByPhone.classList.add('hide');
-        loginByEmail.classList.remove('active');
-        console.log('returnSignUp')
-    } );
+    // Define the common function
+function handleReturnSignUp() {
+    loginLogo.classList.remove('active');
+    loginLogo.classList.add('hide');
+    loginSignUp.classList.remove('hide');
+    loginSignUp.classList.add('active');
+    loginByPhone.classList.remove('active');
+    loginByPhone.classList.add('hide');
+    loginByEmail.classList.remove('active');
+    console.log('returnSignUp');
+}
 
-    returnSignUp2.addEventListener('click', () => {
-        loginLogo.classList.remove('active');
-        loginLogo.classList.add('hide');
-        loginSignUp.classList.remove('hide');
-        loginSignUp.classList.add('active');
-        loginByPhone.classList.remove('active');
-        loginByPhone.classList.add('hide');
-        loginByEmail.classList.remove('active');
-        console.log('returnSignUp2')
-    });
+// Attach the function to both elements
+returnSignUp.addEventListener('click', handleReturnSignUp);
+returnSignUp2.addEventListener('click', handleReturnSignUp);
 
     returnSignIn.addEventListener('click', () => {
         loginLogo.classList.remove('active');
