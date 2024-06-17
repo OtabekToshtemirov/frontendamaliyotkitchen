@@ -1,7 +1,9 @@
 import { categories } from './main/categories.js';
 import { meals } from './main/mealsData.js';
 
-window.onload = function() {
+
+document.addEventListener('DOMContentLoaded', () => {
+
     // Burger menu functionality
     const burger = document.querySelector('.burger-menu');
     burger.addEventListener('click', openNav);
@@ -55,14 +57,15 @@ window.onload = function() {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
-                <h3>${meal.type}</h3>
+                <span class="card-id">${meal.id}</span>
                 <img src="${meal.img}" alt="${meal.name}">
+                <h3 class="meal-type">${meal.type}</h3>
                 <div class="card-content">
-                    <p>${meal.name}</p>
-                    <p>Fat: ${meal.fat}</p>
-                    <p>Carbohydrates: ${meal.carbohydrates}</p>
-                    <p>Energy: ${meal.energy}</p>
-                    <p>Total weight: ${meal.weight}</p>
+                    <p class="meal-name">${meal.name}</p>
+                    <p>Fat - ${meal.fat}</p>
+                    <p>Carbohydrates - ${meal.carbohydrates}</p>
+                    <p>Energy - ${meal.energy}</p>
+                    <p>Total weight - ${meal.weight}</p>
                 </div>
             `;
             slider.appendChild(card);
@@ -206,4 +209,42 @@ window.onload = function() {
     setTimeout(() => {
         setPositionByIndex(); // Ensure the slider is set to the correct initial position
     }, 20); // Slight delay to allow for DOM update
-};
+
+    //faq section
+    const faqItems = document.querySelectorAll('.faq-item');
+
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            question.classList.toggle('active-question');
+        });
+    });
+
+
+});
+
+
+
+window.addEventListener('scroll', debounce(handleScroll, 100), { passive: true });
+
+function handleScroll() {
+    const leftMenu = document.querySelector('.left-menu');
+    if (window.pageYOffset > 0) {
+        leftMenu.style.bottom = '-60px'; // hides the menu
+    } else {
+        leftMenu.style.bottom = '0'; // shows the menu
+    }
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+

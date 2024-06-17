@@ -213,6 +213,10 @@ header {
 
 
 @media screen and (max-width: 425px){
+
+    .login span{
+        display: none;
+    }
     .nav-links ul li a{
         font-size: 14px;
     }
@@ -220,7 +224,14 @@ header {
         font-size: 14px;
     }
     .login{
-        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:15px 19px;
+    }
+    .login img{
+        position: absolute;
+        left: 2px;
     }
 }
 

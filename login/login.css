@@ -1,0 +1,319 @@
+
+
+.container {
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    max-height: 90vh;
+}
+
+.login-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.login-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-right {
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.language {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.login-right-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-button{
+    border-radius: 6px;
+    width: 400px;
+    height: 48px;
+    background: #8ec038;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-button:hover {
+    background: #6e9c2b;
+}
+
+.login-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 92%;
+    color: #000;
+}
+
+/*login sign in */
+.login-by-phone{
+    display: none;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.login-by-phone input{
+    margin-top: 50px;
+    width: 95%;
+    height: 48px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.login-by-phone input:focus{
+    border: 1px solid #8ec038;
+}
+
+.login-by-phone label{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: #adadad;
+}
+
+.login-by-phone label a{
+    color: #adadad;
+    text-decoration: underline;
+}
+
+.login-by-phone p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #adadad;
+    margin-top: 20px;
+
+}
+
+.login-by-phone p a{
+    color: #3056d3;
+    text-decoration: none;
+}
+
+
+
+.send-code-button:hover {
+    background: #6e9c2b;
+}
+
+.login-by-phone a{
+    color: #adadad;
+    text-decoration: none;
+}
+
+/*login sign up*/
+.login-by-email{
+    width: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.login-by-email input{
+    margin-top: 50px;
+    width: 95%;
+    height: 48px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.login-by-email input:focus{
+    border: 1px solid #8ec038;
+}
+
+.login-by-email label{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: #adadad;
+}
+
+.login-by-email label a{
+    color: #adadad;
+    text-decoration: underline;
+}
+
+.login-by-email p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #adadad;
+    margin-top: 20px;
+
+}
+
+.login-by-email p a{
+    color: #3056d3;
+    text-decoration: none;
+}
+
+
+
+.send-code-button:hover {
+    background: #6e9c2b;
+}
+
+.login-by-email a{
+    color: #adadad;
+    text-decoration: none;
+}
+
+/*login signup---------------------*/
+.login-sign-up{
+    width: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.login-sign-up p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #adadad;
+}
+.name, .sign-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 48px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+}
+
+.sign-code .login-button, .name input, .sign-code input{
+    margin: 5px;
+}
+
+.name{
+    margin-top: 30px;
+}
+
+.name input, .sign-code input{
+    width: 48%;
+    height: 48px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+.yellow{
+    background: #ffa800;
+}
+.yellow:hover{
+    background: #ff8c00;
+}
+
+
+
+
+
+
+
+
+
+
+
+.active{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .login-content {
+        flex-direction: column;
+        max-height: 550px;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .login-button{
+        width: 100%;
+    }
+    .login-title{
+        text-align: center;
+    }
+
+    .login-by-phone, .login-by-email, .login-sign-up{
+        width: 100%;
+    }
+}
